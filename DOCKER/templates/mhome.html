@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+        	<title>Authorship Identification</title>
+		 <link href="../static/css/home-page.css" rel="stylesheet">
+	</head>
+    	<body>
+		
+ 		<nav class="topnav" role="navigation">
+            		<div class="container">
+				<div class="navbar-header">
+                    			<a class="navbar-brand">Authorship Identification</a>
+                		</div>
+				<div class="right-nav">
+                    			
+                        			<a class="ha" href="/">Home</a>
+                        			
+                        			<a class="ha" href="/aboutus">About Us</a>
+                        			
+					 
+               			 </div>
+                		 <!-- /.navbar-collapse -->
+            		</div>
+            		<!-- /.container -->
+        	</nav>
+		<div class="intro-header">
+           		 <div class="container">
+				<div class="intro-message">
+					
+                            		<h1>Authorship Identification</h1>
+                            		<h2>A Self Check Portal for your Article</h3>
+					<hr class="intro-divider">
+					<h3>This website helps you identify who is the author of the disputed article <br> Please provide your previous articles for identifying your writing style.</h5>
+				</div>
+			</div>
+		</div>
+
+              <div class="upload"  style="position: absolute; top:700px; left:500px; width:200px; height:25px">
+            <form id="upload-form" action ="/upload-file" method ="POST" enctype="multipart/form-data">
+           choose your author1 file: <input type = "file" name = "author1-file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" ><!--csv,xls,xlsx-->
+
+	   choose your author2 file: <input type = "file" name = "author2-file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" >
+	
+	choose your disputed file: <input type = "file" name = "disputed-file" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" >
+
+                <input class="submitbtn" type = "submit" value = "Upload">
+            </form>
+
+  	</div>
+
+	</body>
+</html>
